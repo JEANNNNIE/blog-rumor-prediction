@@ -47,7 +47,7 @@ def tf_idf(full_set, stopwords):
     print("字典保存成功")
     pickle.dump(transformer,open('TfidfTransformer.pkl','wb'))
     print("tf-idf转换器保存成功")
-    words = vectorizer.get_feature_names()
+    words = vectorizer.get_feature_names_out()
     print("how many words: {0}".format(len(words)))
     print("tf-idf shape: ({0},{1})".format(tfidf.shape[0], tfidf.shape[1]))
     return tfidf

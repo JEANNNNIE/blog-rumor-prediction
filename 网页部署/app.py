@@ -27,9 +27,9 @@ def predict():
     output = int(predict[0])
 
     if output>0.5:
-        return render_template('rumor.html',pred='This is a rumor probably.',bhai="kuch karna hain iska ab?")
+        return render_template('rumor.html',pred='This is a rumor probably.')
     else:
-        return render_template('rumor.html',pred='It is likely to be true.',bhai="Your Forest is Safe for now")
+        return render_template('rumor.html',pred='It is likely to be true.')
 
 
 if __name__ == '__main__':
